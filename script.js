@@ -21,7 +21,7 @@ nome.addEventListener("focus", () => {
 email.addEventListener("blur", () => {
     if(email.value.length == ""){
         alertEmail.textContent = "Campo obrigatório!";
-    }else if(email.value == "^[^\s@]+@[^\s@]+\.[^\s@]+$"){
+    }else if(email.value != "^[^\s@]+@[^\s@]+\.[^\s@]+$"){
         alertEmail.textContent = "O e-mail deverá conter @";
     }else{
         alertEmail.textContent = "";
